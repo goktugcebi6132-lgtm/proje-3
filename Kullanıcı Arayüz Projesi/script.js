@@ -1,19 +1,19 @@
-// Geçmiş tarihleri engeller
+// geçmiş tarihleri seçmeyi engeller
 document.getElementById("tarih").min = new Date().toISOString().split("T")[0];
 
 function rezervasyonYap(event) {
-    // Başka sayfaya atmasını engeller
+    // başka sayfaya atmasını engeller
     event.preventDefault(); 
     
-    // Formda girilen ismi alır
+    // gormda girilen ismi alır
     let isim = document.getElementById("isim").value;
     
-    // Gizli mesaj kutusundaki boş yere bu ismi yazar
+    // gizli mesaj kutusuna girilen ismi yazar
     document.getElementById("mesajIsim").innerText = isim;
     
-    // Gizli olan yeşil başarı mesajını ekrana yazar
+    // gizli olan mesajı ekrana çıkarır
     document.getElementById("basariMesaji").style.display = "block";
     
-    // Sayfayı resetler
+    // resetler
     document.getElementById("rezervasyonFormu").reset();
 }
