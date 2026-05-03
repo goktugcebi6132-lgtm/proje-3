@@ -1,0 +1,31 @@
+.card-img-top {
+    height: 250px !important;
+    object-fit: cover !important;
+}
+
+.hareketli-kart {
+    transition: all 0.3s ease-in-out;
+}
+
+.hareketli-kart:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2) !important;
+}
+
+.ana-header {
+    height: 80vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('Restoran-index.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.harf-araligi-2 {
+    letter-spacing: 2px;
+}
+
+.harf-araligi-1 {
+    letter-spacing: 1px;
+}
+img.rounded-circle{
+object-fit: cover;
+}

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartal Restoran</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-3 font-weight-bold text-warning" href="index.html">Kartal Restoran</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto fs-5">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Ana Sayfa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menümüz</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hakkimizda.html">Hakkımızda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="rezervasyon.html">Rezervasyon</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="container my-5">
+
+        <div class="text-center mb-3">
+            <h2 class="text-warning font-weight-bold text-uppercase">Masa Ayırtın</h2>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card shadow-lg border-0 rounded">
+                    <div class="card-body p-5">
+
+                        <form id="rezervasyonFormu" onsubmit="rezervasyonYap(event)">
+                            <div class="row mb-3">
+                                <div class="col-md-6 mb-3 mb-md-0">
+                                    <label for="isim" class="form-label font-weight-bold">Ad Soyad</label>
+                                    <input type="text" class="form-control" id="isim" placeholder="Örn: Ahmet Yılmaz"
+                                        required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="telefon" class="form-label font-weight-bold">Telefon Numarası</label>
+                                    <input type="tel" class="form-control" id="telefon" placeholder="05XX XXX XX XX"
+                                        required>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+
+                                <div class="col-md-4 mb-3 mb-md-0">
+                                    <label for="tarih" class="form-label font-weight-bold">Tarih</label>
+                                    <input type="date" class="form-control" id="tarih" required>
+                                </div>
+
+                                <div class="col-md-4 mb-3 mb-md-0">
+                                    <label for="saat" class="form-label font-weight-bold">Saat</label>
+                                    <select class="form-control" id="saat" required>
+                                        <option value="" selected disabled>Saat Seçiniz...</option>
+
+                                        <option value="18:00">10:00</option>
+                                        <option value="18:20">10:30</option>
+                                        <option value="18:40">11:00</option>
+                                        <option value="19:00">11:30</option>
+                                        <option value="19:20">12:00</option>
+                                        <option value="19:40">12:30</option>
+                                        <option value="20:00">13:00</option>
+                                        <option value="20:20">13:30</option>
+                                        <option value="20:40">14:00</option>
+                                        <option value="21:00">14:30</option>
+                                        <option value="21:20">15:00</option>
+                                        <option value="21:40">15:30</option>
+                                        <option value="18:00">16:00</option>
+                                        <option value="18:20">16:30</option>
+                                        <option value="18:40">17:00</option>
+                                        <option value="19:00">17:30</option>
+                                        <option value="19:20">18:00</option>
+                                        <option value="19:40">18:30</option>
+                                        <option value="20:00">19:00</option>
+                                        <option value="20:20">19:30</option>
+                                        <option value="20:40">20:00</option>
+                                        <option value="21:00">20:30</option>
+                                        <option value="21:20">21:00</option>
+                                        <option value="21:40">21:30</option>
+                                        <option value="22:00">22:00</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <label for="kisiSayisi" class="form-label font-weight-bold">Kişi Sayısı</label>
+                                    <select class="form-control" id="kisiSayisi" required>
+                                        <option value="" selected disabled>Seçiniz...</option>
+                                        <option value="1">1 Kişi</option>
+                                        <option value="2">2 Kişi</option>
+                                        <option value="3">3 Kişi</option>
+                                        <option value="4">4 Kişi</option>
+                                        <option value="5+">5 ve Üzeri (Grup)</option>
+                                    </select>
+                                </div>
+                            </div>
+
+
+                            <div class="mb-4">
+                                <label for="mesaj" class="form-label font-weight-bold">Özel İstekleriniz (İsteğe
+                                    Bağlı)</label>
+                                <textarea class="form-control" id="mesaj" rows="3"
+                                    placeholder="Bebek sandalyesi, cam kenarı talebi vb..."></textarea>
+                            </div>
+
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-warning btn-lg font-weight-bold px-5">Rezervasyonu
+                                    Tamamla</button>
+                            </div>
+
+                            <div id="basariMesaji" class="alert alert-success mt-4 text-center shadow-sm"
+                                style="display: none;">
+                                <i class="fa-solid fa-check-circle me-2"></i>
+                                <strong>Harika!</strong> Sayın <span id="mesajIsim" class="text-capitalize"></span>,
+                                rezervasyonunuz başarıyla
+                                alındı.
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <footer class="bg-dark text-light pt-5 pb-3 mt-5">
+        <div class="container">
+
+            <div class="row text-center justify-content-center">
+
+                <div class="col-md-6 mb-3">
+                    <h5 class="text-warning font-weight-bold text-uppercase letter-spacing">Kartal
+                        Restoran</h5>
+                    <p class="small text-muted">
+                        Ailenizle lezzetli anılar biriktirebileceğiniz, taze malzemeler ve usta ellerle hazırlanan
+                        menülerimizle sizi ağırlamaktan mutluluk duyarız.
+                    </p>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <h5 class="text-warning font-weight-bold">İletişim</h5>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2">📍 Adres: Sakarya Üniversitesi, Sakarya</li>
+                        <li class="mb-2">📞 Telefon: 0264 061 19 03</li>
+                        <li class="mb-2">✉️ E-posta: kartalrestoran@ciğmeyil.com</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="row mt-4 pt-3 border-top border-secondary">
+                <div class="col-12 text-center">
+                    <p class="mb-0 small text-muted">2026 Kartal Restoran. Tüm hakları saklıdır.</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+
+
+
+</body>
+
+</html>

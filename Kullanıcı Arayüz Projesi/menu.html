@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartal Restoran</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-3 font-weight-bold text-warning" href="index.html">Kartal Restoran</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto fs-5">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Ana Sayfa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menümüz</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hakkimizda.html">Hakkımızda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="rezervasyon.html">Rezervasyon</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+
+        <div class="text-center mb-5">
+            <h2 class="text-warning font-weight-bold text-uppercase">Menümüz</h2>
+        </div>
+
+        <ul class="nav nav-pills justify-content-center mb-5" id="menu-sekmeleri" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link font-weight-bold text-dark" id="corba-tab" data-toggle="pill" href="#corbalar"
+                    role="tab">🍲 Çorbalar</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link font-weight-bold text-dark" id="anayemek-tab" data-toggle="pill" href="#ana-yemekler"
+                    role="tab">🥩 Ana Yemekler</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link font-weight-bold text-dark" id="icecekler" data-toggle="pill" href="#icecekler"
+                    role="tab">🥤 İçecekler</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link font-weight-bold text-dark" id="tatli-tab" data-toggle="pill" href="#tatlilar"
+                    role="tab">🍰 Tatlılar</a>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="menu-icerikleri">
+
+            <div class="tab-pane fade show active" id="corbalar" role="tabpanel">
+                <div class="row">
+
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex justify-content-between border-bottom border-warning pb-2">
+                            <h5 class="font-weight-bold">Mercimek Çorbası</h5>
+                            <h5 class="text-warning font-weight-bold">85 ₺</h5>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex justify-content-between border-bottom border-warning pb-2">
+                            <h5 class="font-weight-bold">Ezogelin Çorbası</h5>
+                            <h5 class="text-warning font-weight-bold">85 ₺</h5>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex justify-content-between border-bottom border-warning ">
+                            <h5 class="font-weight-bold ">Yoğurt Çorbası</h5>
+                            <h5 class="text-warning font-weight-bold">85 ₺</h5>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex justify-content-between border-bottom border-warning ">
+                            <h5 class="font-weight-bold ">Tarhana Çorbası</h5>
+                            <h5 class="text-warning font-weight-bold">85 ₺</h5>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex justify-content-between border-bottom border-warning ">
+                            <h5 class="font-weight-bold ">Yayla Çorbası</h5>
+                            <h5 class="text-warning font-weight-bold">85 ₺</h5>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex justify-content-between border-bottom border-warning ">
+                            <h5 class="font-weight-bold ">Düğün Çorbası</h5>
+                            <h5 class="text-warning font-weight-bold">85 ₺</h5>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="ana-yemekler" role="tabpanel">
+
+                <div class="text-center mb-4">
+                    <h2 class=" d-inline-block font-weight-bold border-bottom border-dark ">Et ve Kebap Çeşitleri
+                    </h2>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex justify-content-between border-bottom border-warning pb-2">
+                            <h5 class="font-weight-bold">Adana Kebap</h5>
+                            <h5 class="text-warning font-weight-bold">450 ₺</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex justify-content-between border-bottom border-warning pb-2">
+                            <h5 class="font-weight-bold">Urfa Kebap</h5>
+                            <h5 class="text-warning font-weight-bold">520 ₺</h5>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex justify-content-between border-bottom border-warning pb-2">
+                            <h5 class="font-weight-bold">Kağıt Kebabı</h5>
+                            <h5 class="text-warning font-weight-bold">450 ₺</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex justify-content-between border-bottom border-warning pb-2">
+                            <h5 class="font-weight-bold">İskender</h5>
+                            <h5 class="text-warning font-weight-bold">520 ₺</h5>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex justify-content-between border-bottom border-warning pb-2">
+                            <h5 class="font-weight-bold">Köfte</h5>
+                            <h5 class="text-warning font-weight-bold">450 ₺</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex justify-content-between border-bottom border-warning pb-2">
+                            <h5 class="font-weight-bold">Tas Kebabı</h5>
+                            <h5 class="text-warning font-weight-bold">520 ₺</h5>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="text-center mb-4">
+                    <h2 class=" d-inline-block font-weight-bold border-bottom border-dark ">Tavuk Yemekleri
+                    </h2>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex justify-content-between border-bottom border-warning pb-2">
+                            <h5 class="font-weight-bold">Fırın Tavuk</h5>
+                            <h5 class="text-warning font-weight-bold">450 ₺</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex justify-content-between border-bottom border-warning pb-2">
+                            <h5 class="font-weight-bold">Tavuk Sote</h5>
+                            <h5 class="text-warning font-weight-bold">520 ₺</h5>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="text-center mb-4">
+                    <h2 class=" d-inline-block font-weight-bold border-bottom border-dark ">Sebze ve Zeytinyağlı
+                        Yemekler
+
+                    </h2>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex justify-content-between border-bottom border-warning pb-2">
+                            <h5 class="font-weight-bold">Yaprak Sarması</h5>
+                            <h5 class="text-warning font-weight-bold">450 ₺</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex justify-content-between border-bottom border-warning pb-2">
+                            <h5 class="font-weight-bold">Biber Dolması</h5>
+                            <h5 class="text-warning font-weight-bold">520 ₺</h5>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex justify-content-between border-bottom border-warning pb-2">
+                            <h5 class="font-weight-bold">Karnıyarık</h5>
+                            <h5 class="text-warning font-weight-bold">450 ₺</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex justify-content-between border-bottom border-warning pb-2">
+                            <h5 class="font-weight-bold">Taze Fasulye</h5>
+                            <h5 class="text-warning font-weight-bold">520 ₺</h5>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="text-center mb-4">
+                    <h2 class=" d-inline-block font-weight-bold border-bottom border-dark ">Deniz Ürünleri
+
+                    </h2>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex justify-content-between border-bottom border-warning pb-2">
+                            <h5 class="font-weight-bold">Fırında Sebzeli Somon</h5>
+                            <h5 class="text-warning font-weight-bold">450 ₺</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex justify-content-between border-bottom border-warning pb-2">
+                            <h5 class="font-weight-bold">Hamsi Buğulama</h5>
+                            <h5 class="text-warning font-weight-bold">520 ₺</h5>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex justify-content-between border-bottom border-warning pb-2">
+                            <h5 class="font-weight-bold">Izgara Balık</h5>
+                            <h5 class="text-warning font-weight-bold">450 ₺</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex justify-content-between border-bottom border-warning pb-2">
+                            <h5 class="font-weight-bold">Hamsi Tava</h5>
+                            <h5 class="text-warning font-weight-bold">520 ₺</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mb-4">
+                    <h2 class=" d-inline-block font-weight-bold border-bottom border-dark ">Yöresel Lezzetler
+
+                    </h2>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex justify-content-between border-bottom border-warning pb-2">
+                            <h5 class="font-weight-bold">Lahmacun</h5>
+                            <h5 class="text-warning font-weight-bold">450 ₺</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex justify-content-between border-bottom border-warning pb-2">
+                            <h5 class="font-weight-bold">Mantı</h5>
+                            <h5 class="text-warning font-weight-bold">520 ₺</h5>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex justify-content-between border-bottom border-warning pb-2">
+                            <h5 class="font-weight-bold">Kuymak</h5>
+                            <h5 class="text-warning font-weight-bold">450 ₺</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex justify-content-between border-bottom border-warning pb-2">
+                            <h5 class="font-weight-bold">Tantuni</h5>
+                            <h5 class="text-warning font-weight-bold">520 ₺</h5>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="tab-pane fade" id="icecekler" role="tabpanel">
+
+                <div class="text-center mb-4">
+                    <h2 class=" d-inline-block font-weight-bold border-bottom border-dark ">Soğuk İçecekler
+
+                    </h2>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex justify-content-between border-bottom border-warning pb-2">
+                            <h5 class="font-weight-bold">Ayran</h5>
+                            <h5 class="text-warning font-weight-bold">120 ₺</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex justify-content-between border-bottom border-warning pb-2">
+                            <h5 class="font-weight-bold">Limonata</h5>
+                            <h5 class="text-warning font-weight-bold">180 ₺</h5>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex justify-content-between border-bottom border-warning pb-2">
+                            <h5 class="font-weight-bold">Kola</h5>
+                            <h5 class="text-warning font-weight-bold">120 ₺</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex justify-content-between border-bottom border-warning pb-2">
+                            <h5 class="font-weight-bold">Fanta</h5>
+                            <h5 class="text-warning font-weight-bold">180 ₺</h5>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex justify-content-between border-bottom border-warning pb-2">
+                            <h5 class="font-weight-bold">Gazoz</h5>
+                            <h5 class="text-warning font-weight-bold">120 ₺</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex justify-content-between border-bottom border-warning pb-2">
+                            <h5 class="font-weight-bold">Maden Suyu</h5>
+                            <h5 class="text-warning font-weight-bold">180 ₺</h5>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex justify-content-between border-bottom border-warning pb-2">
+                            <h5 class="font-weight-bold">Soğuk Çay</h5>
+                            <h5 class="text-warning font-weight-bold">120 ₺</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex justify-content-between border-bottom border-warning pb-2">
+                            <h5 class="font-weight-bold">Meyve Suyu</h5>
+                            <h5 class="text-warning font-weight-bold">180 ₺</h5>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="text-center mb-4">
+                    <h2 class=" d-inline-block font-weight-bold border-bottom border-dark ">Sıcak İçecekler
+
+                    </h2>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex justify-content-between border-bottom border-warning pb-2">
+                            <h5 class="font-weight-bold">Siyah Çay</h5>
+                            <h5 class="text-warning font-weight-bold">120 ₺</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex justify-content-between border-bottom border-warning pb-2">
+                            <h5 class="font-weight-bold">Bitki Çayı</h5>
+                            <h5 class="text-warning font-weight-bold">180 ₺</h5>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex justify-content-between border-bottom border-warning pb-2">
+                            <h5 class="font-weight-bold">Türk Kahvesi</h5>
+                            <h5 class="text-warning font-weight-bold">120 ₺</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex justify-content-between border-bottom border-warning pb-2">
+                            <h5 class="font-weight-bold">Dibek Kahvesi</h5>
+                            <h5 class="text-warning font-weight-bold">180 ₺</h5>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="row">
+
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex justify-content-between border-bottom border-warning pb-2">
+                            <h5 class="font-weight-bold">Salep</h5>
+                            <h5 class="text-warning font-weight-bold">120 ₺</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex justify-content-between border-bottom border-warning pb-2">
+                            <h5 class="font-weight-bold">Sıcak Çikolata</h5>
+                            <h5 class="text-warning font-weight-bold">180 ₺</h5>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+            <div class="tab-pane fade" id="tatlilar" role="tabpanel">
+
+                <div class="text-center mb-4">
+                    <h2 class=" d-inline-block font-weight-bold border-bottom border-dark ">Şerbetli Tatlılar
+
+                    </h2>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex justify-content-between border-bottom border-warning pb-2">
+                            <h5 class="font-weight-bold">Fıstıklı Baklava</h5>
+                            <h5 class="text-warning font-weight-bold">120 ₺</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex justify-content-between border-bottom border-warning pb-2">
+                            <h5 class="font-weight-bold">Cevizli Baklava</h5>
+                            <h5 class="text-warning font-weight-bold">180 ₺</h5>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex justify-content-between border-bottom border-warning pb-2">
+                            <h5 class="font-weight-bold">Künefe</h5>
+                            <h5 class="text-warning font-weight-bold">120 ₺</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex justify-content-between border-bottom border-warning pb-2">
+                            <h5 class="font-weight-bold">Revani</h5>
+                            <h5 class="text-warning font-weight-bold">180 ₺</h5>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex justify-content-between border-bottom border-warning pb-2">
+                            <h5 class="font-weight-bold">Tulumba</h5>
+                            <h5 class="text-warning font-weight-bold">120 ₺</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex justify-content-between border-bottom border-warning pb-2">
+                            <h5 class="font-weight-bold">Kemalpaşa</h5>
+                            <h5 class="text-warning font-weight-bold">180 ₺</h5>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="text-center mb-4">
+                    <h2 class=" d-inline-block font-weight-bold border-bottom border-dark ">Sütlü Tatlılar
+
+                    </h2>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex justify-content-between border-bottom border-warning pb-2">
+                            <h5 class="font-weight-bold">Sütlaç</h5>
+                            <h5 class="text-warning font-weight-bold">120 ₺</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex justify-content-between border-bottom border-warning pb-2">
+                            <h5 class="font-weight-bold">Kazandibi</h5>
+                            <h5 class="text-warning font-weight-bold">180 ₺</h5>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex justify-content-between border-bottom border-warning pb-2">
+                            <h5 class="font-weight-bold">Muhallebi</h5>
+                            <h5 class="text-warning font-weight-bold">120 ₺</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex justify-content-between border-bottom border-warning pb-2">
+                            <h5 class="font-weight-bold">Trileçe</h5>
+                            <h5 class="text-warning font-weight-bold">180 ₺</h5>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="bg-dark text-light pt-5 pb-3 mt-5">
+        <div class="container">
+
+            <div class="row text-center justify-content-center">
+
+                <div class="col-md-6 mb-3">
+                    <h5 class=" harf-araligi-1 style text-warning font-weight-bold text-uppercase">Kartal
+                        Restoran</h5>
+                    <p class="small text-muted">
+                        Ailenizle lezzetli anılar biriktirebileceğiniz, taze malzemeler ve usta ellerle hazırlanan
+                        menülerimizle sizi ağırlamaktan mutluluk duyarız.
+                    </p>
+                </div>
+
+
+
+                <div class="col-md-6 mb-3">
+                    <h5 class="text-warning font-weight-bold">İletişim</h5>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2">📍 Adres: Sakarya Üniversitesi, Sakarya</li>
+                        <li class="mb-2">📞 Telefon: 0264 061 19 03</li>
+                        <li class="mb-2">✉️ E-posta: kartalrestoran@ciğmeyil.com</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="row mt-4 pt-3 border-top border-secondary">
+                <div class="col-12 text-center">
+                    <p class="mb-0 small text-muted">2026 Kartal Restoran. Tüm hakları saklıdır.</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
