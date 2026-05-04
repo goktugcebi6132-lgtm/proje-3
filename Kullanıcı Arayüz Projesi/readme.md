@@ -1,42 +1,40 @@
-# Kartal Restoran Web Projesi
+# Kartal Restaurant Web Project
 
-Kartal Restoran; modern, kullanıcı dostu ve tüm cihazlarla uyumlu bir restoran web sitesi projesidir. Bu proje, müşterilerin restoran hakkında bilgi almasını, menüyü incelemesini ve rezervasyon yapmasını kolaylaştırmak amacıyla geliştirilmiştir.
+Kartal Restaurant is a modern, user-friendly, and fully responsive restaurant website project. This project was developed to make it easier for customers to get information about the restaurant, browse the menu, and make reservations.
 
-## Özellikler
+## Features
 
-* **Responsive Tasarım:** Bootstrap 4 altyapısı sayesinde mobil, tablet ve masaüstü cihazlarda kullanım.
-* **Dinamik Rezervasyon Formu:** * Geçmiş tarihlerin seçilmesini engelleyen tarih kontrolü.
-  * Form gönderildiğinde kullanıcıya özel başarı mesajı.
-  * Hızlı ve kolay veri girişi.
-* **Modern Arayüz:** CSS animasyonları ve hover efektleri ile zenginleştirilmiş kullanıcı deneyimi.
-* **Kurumsal Tanıtım:** Restoranın hikayesi ve mutfak ekibini (şefleri) tanıtan bölümler.
-* **İletişim Bilgileri:** Adres, telefon ve e-posta bilgilerinin yer aldığı footer bölümü.
+* **Responsive Design:** Usable on mobile, tablet, and desktop devices thanks to the Bootstrap 4 framework.
+* **Dynamic Reservation Form:** * Date control preventing the selection of past dates.
+  * Custom success message for the user upon form submission.
+  * Quick and easy data entry.
+* **Modern Interface:** Enhanced user experience with CSS animations and hover effects.
+* **Corporate Introduction:** Sections introducing the restaurant's story and the culinary team (chefs).
+* **Contact Information:** A footer section containing the address, phone number, and email.
 
-## Kullanılan Teknolojiler
+## Technologies Used
 
-* **HTML5:** Sayfa yapısı ve içerik yönetimi.
-* **CSS3 & Bootstrap 4:** Görsel tasarım, grid sistemi ve bileşenler.
-* **JavaScript:** Form işlemleri, validasyon ve interaktif öğeler.
+* **HTML5:** Page structure and content management.
+* **CSS3 & Bootstrap 4:** Visual design, grid system, and components.
+* **JavaScript:** Form handling, validation, and interactive elements.
 
-## Proje Yapısı
+## Project Structure
 
-* `index.html`: Restoranın genel tanıtımının ve öne çıkanların yer aldığı ana sayfa.
-* `menu.html`: Kategorize edilmiş yemek ve içecek listesi.
-* `hakkimizda.html`: Restoranın vizyonu ve şef kadrosunun tanıtımı.
-* `rezervasyon.html`: Masa ayırtma işlemlerinin yapıldığı interaktif sayfa.
-* `style.css`: Projeye özel stiller, animasyonlar ve Bootstrap sınıfları.
-* `script.js`: Form kontrolleri ve dinamik frontend mantığı.
+* `index.html`: The main page featuring a general introduction and highlights of the restaurant.
+* `menu.html`: Categorized food and beverage list.
+* `hakkimizda.html`: The restaurant's vision and introduction of the chef team.
+* `rezervasyon.html`: Interactive page for table reservation processes.
+* `style.css`: Project-specific styles, animations, and Bootstrap classes.
+* `script.js`: Form controls and dynamic frontend logic.
 
-## Kurulum ve Kullanım
+## Installation and Usage
 
-1. Bu projeyi bilgisayarınıza indirin veya klonlayın.
-2. `index.html` dosyasını web tarayıcısında (Chrome, Edge, Firefox vb.) açarak siteyi görüntüleyebilirsiniz.
-3. Sayfalar arası geçiş için navigasyon menüsünü kullanabilirsiniz.
-
-## İletişim
-
-* **Adres:** Sakarya Üniversitesi, Sakarya
-* **Telefon:** 0264 061 19 03
-* **E-posta:** kartalrestoran@ciğmeyil.com
+1. Download or clone this project to your computer.
+2. You can view the site by opening the `index.html` file in a web browser (Chrome, Edge, Firefox, etc.).
+3. You can use the navigation menu to switch between pages.
 
 ---
+
+* **Göktuğ Çebi (B241202078)** - (Frontend Developer)
+* **Arda Uyar (B241202070)** - (UI Designer)
+* **Halit Tuğtekin (B241202010)** - (Tester / Documentation)
